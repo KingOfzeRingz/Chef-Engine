@@ -1,5 +1,6 @@
 package com.slinex.chefengine.ui.theme
 
+import android.annotation.SuppressLint
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.darkColors
@@ -12,19 +13,18 @@ private val DarkColorPalette = darkColors(
     secondary = Teal200
 )
 
+@SuppressLint("ConflictingOnColor")
 private val LightColorPalette = lightColors(
-    primary = Purple500,
-    primaryVariant = Purple700,
-    secondary = Teal200
-
-    /* Other default colors to override
-    background = Color.White,
-    surface = Color.White,
-    onPrimary = Color.White,
-    onSecondary = Color.Black,
-    onBackground = Color.Black,
-    onSurface = Color.Black,
-    */
+    primary = SeaSalt,
+    primaryVariant = SeaSalt,
+    secondary = White,
+    background = SeaSalt,
+    surface = White,
+    onBackground = Night,
+    onSurface = Jet,
+    error = Rojo,
+    onPrimary = SelectiveYellow,
+    onSecondary = Xanthous
 )
 
 @Composable
